@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "980115957439",
+    "project_id": "my-laundry-app-2025",
+    "storage_bucket": "my-laundry-app-2025.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:980115957439:android:3db14039af33be1991880a",
+        "android_client_info": {
+          "package_name": "com.meghpy.mylaundryapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCT8C54HBwvULlwuT3GGz4qN-5q_mG1ihY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

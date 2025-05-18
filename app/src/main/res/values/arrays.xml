@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="services_array">
+        <item>Wash Only</item>
+        <item>Iron Only</item>
+        <item>Wash &amp; Iron</item>
+        <item>Dry Clean</item>
+    </string-array>
+
+    <string-array name="quantities_array">
+        <item>1 item</item>
+        <item>2 items</item>
+        <item>3 items</item>
+        <item>4 items</item>
+        <item>5 items</item>
+        <item>6 items</item>
+        <item>7 items</item>
+        <item>8 items</item>
+        <item>9 items</item>
+        <item>10 items</item>
+    </string-array>
+</resources>

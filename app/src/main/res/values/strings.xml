@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">Laundry App</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="welcome">Welcome</string>
+    <string name="logout">Logout</string>
+    <string name="new_order">New Order</string>
+    <string name="my_orders">My Orders</string>
+    <string name="my_profile">My Profile</string>
+
+    <string name="service_label">Service: %s</string>
+    <string name="quantity_label">Quantity: %d</string>
+    <string name="pickup_label">Pickup: %s</string>
+    <string name="status_label">Status: %s</string>
+    <string name="confirm_cancel_title">Confirm Cancellation</string>
+    <string name="confirm_cancel_message">Are you sure you want to cancel this order?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="review_hint">Your detailed review...</string>
+    <string name="image_description">Business image</string>
+    <!-- Laundry Listing -->
+    <string name="laundry_image_desc">Laundry shop image</string>
+
+    <!-- Reviews -->
+    <string name="reviews_title">Customer Reviews</string>
+    <string name="add_review">Add Review</string>
+    <string name="rate_experience">Rate your experience</string>
+    <string name="your_review">Your review (optional)</string>
+
+    <string name="cancelling_order">Cancelling order...</string>
+    <string name="cancelled_success">Order cancelled successfully</string>
+    <string name="cancellation_failed">Failed: %s</string>
+
+    <string name="laundry_image">Laundry Image</string>
+
+    <string name="profile">Profile</string>
+    <string name="search_hint">Search for a laundry</string>
+    <string name="services">Services</string>
+    <string name="popular_laundries">Popular laundries nearby</string>
+    <string name="see_all">See all</string>
+    <string name="special_offers">Special Offers</string>
+    <string name="recent_orders">Recent Orders</string>
+    <string name="offer_image">Offer image</string>
+
+    <!-- strings.xml -->
+    <string name="welcome_back">Welcome back, %1$s</string>
+    <string name="user">User</string>
+    <string name="enter_search_term">Please enter search term</string>
+    <string name="error_parsing_data">Error parsing data</string>
+    <string name="network_error">Network error</string>
+    <string name="error_loading_offers">Error loading offers</string>
+    <string name="error_loading_orders">Error loading orders</string>
+    <string name="valid_until">Valid until</string>
+    <string name="use_code">Use Code</string>
+    <string name="close">Close</string>
+    <string name="code_copied">Offer code copied to clipboard</string>
+    <string name="service_icon">Service icon</string>
+
+
+    <!-- Service names -->
+    <string name="service_wash_fold">Wash &amp; Fold</string>
+    <string name="service_dry_clean">Dry Cleaning</string>
+    <string name="service_ironing">Ironing</string>
+    <string name="service_premium">Premium Wash</string>
+
+
+
+    <string-array name="dress_types">
+        <item>Shirt</item>
+        <item>Pant</item>
+        <item>T-Shirt</item>
+        <item>Saree</item>
+        <item>Jeans</item>
+        <item>Kurta</item>
+    </string-array>
+
+    <string-array name="dress_prices">
+        <item>10</item>
+        <item>15</item>
+        <item>8</item>
+        <item>20</item>
+        <item>18</item>
+        <item>12</item>
+    </string-array>
+</resources>
