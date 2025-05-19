@@ -3,12 +3,14 @@ package com.meghpy.mylaundryapp;
 import android.content.Intent;
 import android.os.Bundle;
 
+import android.view.MenuItem;
 import android.widget.EditText;
 
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -17,6 +19,8 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.Volley;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationBarView;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -37,6 +41,7 @@ public class HomeActivity extends AppCompatActivity {
     private RecyclerView rvLaundries;
     private LaundryAdapter adapter;
     private ProgressBar progressBar;
+    private BottomNavigationView bottom_nav;
     // Adapters
 //    private ServiceAdapter serviceAdapter;
 //    private LaundryAdapter laundryAdapter;
@@ -53,20 +58,28 @@ public class HomeActivity extends AppCompatActivity {
         // Setup adapters and data
         rvLaundries = findViewById(R.id.rvPopularLaundry);
         progressBar = findViewById(R.id.progressBar);
+        bottom_nav = findViewById(R.id.bottom_nav);
 
-        tvPopular.setOnClickListener(new View.OnClickListener() {
+        bottom_nav.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
-            public void onClick(View view) {
-                startActivity(new Intent(HomeActivity.this, OrderHistoryActivity.class));
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
+                if (item.getItemId()==R.id.action_home){
+                    startActivity(new Intent(HomeActivity.this, HomeActivity.class));
+                }
+                else if (item.getItemId()==R.id.action_orders){
+                    startActivity(new Intent(HomeActivity.this, OrderHistoryActivity.class));
+                } else if (item.getItemId()==R.id.action_profile){
+                    startActivity(new Intent(HomeActivity.this, ProfileActivity.class));
+                } else if (item.getItemId()==R.id.action_laundry){
+                    startActivity(new Intent(HomeActivity.this, LaundryListActivity.class));
+                }
+
+                return false;
             }
         });
 
-        tvOffers.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(HomeActivity.this, LaundryListActivity.class));
-            }
-        });
+
 
         rvLaundries.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         adapter = new LaundryAdapter(new ArrayList<>(), this);

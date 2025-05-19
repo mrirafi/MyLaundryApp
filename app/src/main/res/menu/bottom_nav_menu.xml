@@ -4,19 +4,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/action_profile"
-        android:icon="@drawable/ic_profile"
-        android:title="Profile"
-        app:showAsAction="ifRoom"/>
+        android:id="@+id/action_home"
+        android:icon="@drawable/ic_home"
+        android:title="Home"
+       />
 
     <item
         android:id="@+id/action_orders"
         android:icon="@drawable/ic_order"
         android:title="My Orders"
-        app:showAsAction="ifRoom"/>
+        />
 
     <item
-        android:id="@+id/action_logout"
-        android:title="Logout"
-        app:showAsAction="never"/>
+        android:id="@+id/action_laundry"
+        android:title="Laundry"
+        android:icon="@drawable/iron"
+        />
+
+    <item
+        android:id="@+id/action_profile"
+        android:title="Profile"
+        android:icon="@drawable/ic_profile"
+        />
 </menu>
